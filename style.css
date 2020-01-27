@@ -7,10 +7,11 @@
 body {
     background-color: #fafafa;
     height: 100vh;
-    background-image: linear-gradient(to right bottom, rgba(0,0,0, 0.4), rgba(0,0,0,0.4)),url(/image/hero-banner.jpg);
+    background-image: linear-gradient(to right bottom, rgba(0,0,0, 0.5), rgba(0,0,0,0.5)),url(/image/hero-banner.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 .logo-bar {
     min-height: 10vh;
@@ -45,6 +46,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .main-form {
@@ -78,6 +80,15 @@ input:focus {
     border: 3px solid #2f7a8d;
 }
 
+.register {
+    color: #fafafa;
+    text-decoration: none;
+    background-color: #2f7a8d;
+    padding: 0.2rem;
+    letter-spacing: 1px;
+
+}
+
 button {
     width: 50%;
     border: none;
@@ -93,4 +104,19 @@ button:focus {
     border: 3px solid #fafafa;
 }
 
+.log-in {
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    padding: 0.5rem;
+    transform: translate(-50%, -5%);
+    z-index: 2;
+    background-color: #2f7a8d;
+    border-radius: 10px;
+}
+
+.log-in h1 {
+    font-size: 1.3rem;
+}
 
