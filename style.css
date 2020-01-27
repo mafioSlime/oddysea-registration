@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(0,0,0, 0.4), rgba(0,0,0,0.4)),url(/image/hero-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo-bar {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color: #2f7a8d;
+}
+
+.logo h1 {   
+    color: #fafafa;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 2rem 0.2rem;
+    font-family: 'Rock Salt', cursive;
+    font-weight: lighter;
+}
+
+main {
+    width: 90%;
+    min-height: 60vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form {
+    width: 300px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #fafafa;
+    border-radius: 20px;
+}
+
+.main-form label {
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+
+.main-input input, button {
+    margin: 2rem;
+    padding: 2rem;
+}
+
+
+input:focus {
+    border: 3px solid #2f7a8d;
+}
+
+button {
+    width: 50%;
+    border: none;
+    color: #fafafa;
+    letter-spacing: 2px;
+    background-color: #2f7a8d;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    
+}
+
+button:focus {
+    border: 3px solid #fafafa;
+}
+
+
