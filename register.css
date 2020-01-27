@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
 }
 
 body {
     background-color: #fafafa;
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(to right bottom, rgba(0,0,0, 0.5), rgba(0,0,0,0.5)),url(/image/hero-banner.jpg);
     background-size: cover;
     background-position: center;
@@ -40,62 +41,69 @@ body {
 }
 
 main {
-    width: 90%;
-    min-height: 60vh;
+    max-width: 90%;
     margin: auto;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+  
 }
 
-.main-form {
-    width: 300px;
-    min-height: 50vh;
+.registration {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1rem;
     border: 1px solid #fafafa;
     border-radius: 20px;
-}
-
-.main-form label {
-    color: #fff;
     padding: 1rem;
+    width: 300px;
+    min-height: 50vh;
+}
+
+.registration label {
+    margin: 1rem;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.registration input {
+    color: #333;
+}
+
+.register {
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.register h1 {
+    text-decoration: none;
     font-size: 1.5rem;
-    letter-spacing: 1px;
+    background-color:  #2f7a8d;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 0.2rem;
 }
-
-
-.main-input input, button {
-    margin: 2rem;
-    padding: 2rem;
-}
-
 
 input:focus {
     border: 3px solid #2f7a8d;
 }
 
-.register {
-    color: #fafafa;
-    text-decoration: none;
-    background-color: #2f7a8d;
-    padding: 0.2rem;
-    letter-spacing: 1px;
+
+input[type="file"] {
+    color: #fff;
+    width: 70%;
+    cursor: pointer;
     
 }
 
-
-.register:hover {
-    opacity: 0.8;
-}
-
 button {
+    margin-top: 1rem;
     width: 50%;
     border: none;
     color: #fafafa;
@@ -106,28 +114,11 @@ button {
     
 }
 
-button:hover {
-    opacity: 0.8;
+.login {
+    padding-top: 0.2rem;
+    text-align: center;
 }
 
-button:focus {
-    border: 3px solid #fafafa;
+.login a {
+    text-decoration: none;
 }
-
-.log-in {
-    color: #fff;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    padding: 0.5rem;
-    transform: translate(-50%, -5%);
-    z-index: 2;
-    background-color: #2f7a8d;
-    border-radius: 10px;
-}
-
-.log-in h1 {
-    font-size: 1.3rem;
-    padding: 0.2rem;
-}
-
