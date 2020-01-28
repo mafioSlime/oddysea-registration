@@ -7,7 +7,7 @@
 
 body {
     background-color: #fafafa;
-    min-height: 100vh;
+    height: 100vh;
     background-image: linear-gradient(to right bottom, rgba(0,0,0, 0.5), rgba(0,0,0,0.5)),url(/image/hero-banner.jpg);
     background-size: cover;
     background-position: center;
@@ -65,7 +65,7 @@ main {
 }
 
 .registration label {
-    margin: 1rem;
+    margin-top: 1.5rem;
     color: #fff;
     font-size: 1.3rem;
 }
@@ -112,6 +112,10 @@ button {
     padding: 0.5rem 1rem;
     cursor: pointer;
     
+}
+
+.upload {
+    margin-bottom: 0.5rem;
 }
 
 .login {
